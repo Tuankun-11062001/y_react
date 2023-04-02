@@ -1,0 +1,50 @@
+.navigation {
+  padding: 2rem 0;
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
+  a {
+    text-decoration: none;
+    color: #222;
+  }
+
+  //   logo
+  &_logo {
+    font-size: 1.8rem;
+    font-weight: 600;
+  }
+
+  //   list
+  &_list {
+    display: flex;
+    gap: 2rem;
+    font-size: 1.2rem;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    a {
+      &.active {
+        color: cadetblue;
+      }
+    }
+  }
+
+  //   buttons
+  &_buttons {
+    display: flex;
+    gap: 2rem;
+    a {
+      &:last-child {
+        background: green;
+        color: white;
+      }
+      padding: 0.5rem 1rem;
+      font-size: 1.2rem;
+      border-radius: 0.5rem;
+    }
+  }
+}
